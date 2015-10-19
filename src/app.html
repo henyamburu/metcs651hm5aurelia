@@ -1,0 +1,9 @@
+<template>
+  <require from="nav-bar.html"></require>
+  <require from="footer-bar.html"></require>
+  <div id="page" align="center">
+    <nav-bar router.bind="router"></nav-bar>
+    <router-view></router-view>
+    <footer-bar router.bind="router"></footer-bar>
+  </div>
+</template>

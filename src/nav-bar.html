@@ -1,0 +1,19 @@
+<template bindable="router">    
+    <div id="header">
+            <div id="companyname" align="left">${router.title}</div>
+            <div id="mainmenu">
+                <ul>
+                    <li repeat.for="row of router.navigation" >
+                        <a class="${row.isActive ? 'current' : ''}" href.bind="row.href">${row.title}</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mainmenu-max-width-480px">
+                <ul>
+                    <li repeat.for="row of router.navigation" >
+                        <a class="${row.isActive ? 'current' : ''}" href.bind="row.href">${row.title}</a>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+</template>

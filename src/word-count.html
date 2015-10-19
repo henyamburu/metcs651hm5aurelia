@@ -1,0 +1,19 @@
+<template>        
+        <div id="container">
+            <div class="container-heading">
+                <h1>${heading}</h1>
+            </div>
+            <div class="container-content">
+                <div class="reader">
+                    <textarea id="lineReader" value.bind="lineReader" keyup.delegate="sortWords()"></textarea>
+                </div>
+                <div class="scroller">                
+                    <ul>
+                        <li repeat.for="word of words">${word.word} ${word.count}</li>
+                    </ul>
+                    <p show.bind="hasWords" class="name"><strong>Total Words: ${totalWords}</strong></p>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>        
+</template>
